@@ -5,5 +5,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: v_py
+        run: python3 --version
       - name: run test
         run: python -m unittest tests\tests.py
