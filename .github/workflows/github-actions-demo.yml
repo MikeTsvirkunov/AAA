@@ -5,7 +5,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: setup
-        run: pip install unittest
       - name: run test
         run: python -m unittest tests\tests.py
