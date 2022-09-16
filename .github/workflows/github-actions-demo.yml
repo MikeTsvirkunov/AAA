@@ -7,4 +7,4 @@ jobs:
     steps:
     - run: python3 --version
     - run: ls ${{ github.workspace }}
-    - run: python -m unittest tests\tests.py
+    - run: python -m unittest ${{ github.workspace }}\tests\tests.py
