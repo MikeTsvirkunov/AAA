@@ -16,7 +16,7 @@ class TestMoveObj(unittest.TestCase):
         spaceship = Object({"speed": self.speed, "coord": self.coord})
         MoveFront().action(spaceship)
         if spaceship.get_param("coord") != self.expected:
-            raise Exception("Not write")
+            raise Exception("incorrect")
 
     @unittest.expectedFailure
     def test_move_obj_without_speed(self):
